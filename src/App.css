@@ -51,10 +51,6 @@ menu.menu {
   margin-top: 59px;
 }
 
-.description p {
-  margin-top: 5px;
-}
-
 .container {
   padding: 0 6%;
 }
@@ -111,8 +107,4 @@ menu.menu {
 
 .playButton img {
   padding-right: 10px;
-}
-
-.playButton p {
-  margin-top: 15px;
 }
