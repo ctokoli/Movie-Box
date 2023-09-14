@@ -3,6 +3,7 @@ import menu_icon from "../assets/Menu_icon.png"
 import imdb from "../assets/imdb.svg"
 import tomato from "../assets/rotten_tomato.svg"
 import play_icon from "../assets/Play_icon.png"
+import { BiSearch } from 'react-icons/bi'
 
 const MenuWithHero = () => {
     return (  
@@ -15,7 +16,8 @@ const MenuWithHero = () => {
                             <h2>MovieBox</h2>
                         </div>
                         <div className="search">
-                            <input type="input" placeholder="search"></input>
+                            <input type="input" placeholder="What do you want to watch?"></input>
+                            <BiSearch className="search_icon" />
                         </div>
                         <div className="sign-in">
                             <h3>Sign in</h3>
