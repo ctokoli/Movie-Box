@@ -108,3 +108,276 @@ menu.menu {
 .playButton img {
   padding-right: 10px;
 }
+
+input[type="input"] {
+  width: 400px;
+  height: 30px;
+  background-color: unset;
+  border: none;
+  padding-left: 10px;
+  font-size: 15px;
+  font-family: DM Sans, sans-serif;
+  font-weight: 200;
+  color: #fff;
+}
+
+input[type="input"]::placeholder {
+  color: #fff;
+  font-family: DM Sans, sans-serif;
+  font-weight: 200;
+ 
+}
+
+.search {
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:placeholder {
+  color: red;
+}
+
+svg.search_icon {
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.details-page {
+  display: flex;
+}
+
+section.nav-section {
+  width: 190px;
+ font-family: DM Sans, sans-serif;
+border: 1px solid #8080809c;
+  border-radius: 0px 30px 30px 0px
+}
+
+.menu.logo > img{
+  width: 30px;
+  height: 30px;
+}
+
+
+h2.menu-name {
+  color: #333333;
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+img.logo-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.menu-list li{
+  padding-left: 10px;
+  list-style: none;
+  cursor: pointer;
+  font-weight: 700;
+  color: #666666;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+    padding: 25px;
+}
+
+a.nav_link:hover {
+  background-color: #be123d2b;
+  border-right: 3px solid #BE123B;
+
+}
+
+a.nav_link:hover li {
+  color: #BE123B;
+}
+
+ul.menu-list {
+  padding-left: 0;
+  margin-top: 70px;
+}
+
+svg.home_icon {
+  font-size: 25px;
+  color: #333333;
+}
+
+.quizes {
+  margin: 0 auto;
+  width: 148px;
+  background: #ffaabf2b;
+  padding: 7px;
+  border: 1px solid #BE123B;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+p.quiz_p1 {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+
+p.quiz_p2 {
+  font-size: 13px;
+  color:#333333;
+ text-align: left;
+}
+
+button.btn {
+  padding: 7px;
+  color: #BE123B;
+  background: #fd87a3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout {
+  margin: 36px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 21px;
+  margin-top: 30px;
+}
+
+section.details-content {
+    margin-left: 50px;
+    margin-top: 35px;
+    width: 1080px;
+}
+
+.trailer img {
+  width: 1080px;
+  height: 350px;
+}
+
+span {
+  font-size: 18px;
+  font-family: DM Sans, sans-serif;
+  padding-left: 10px;
+}
+
+.media_info {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.movie_title {
+  display: flex;
+}
+
+button.btn-genre {
+  margin-left: 20px;
+  color: #B91C1C;
+  background: transparent;
+  border-radius: 50px;
+  border: 1px solid #F8E7EB;
+  padding: 0 13px;
+}
+
+.movie_rating {
+  display: flex;
+  align-items: center;
+}
+
+svg.star_icon {
+  font-size: 22px;
+  color: gold;
+}
+
+span.rating_no {
+  color: #80808063;
+  padding-left: 6px;
+}
+
+span.rating_ {
+  padding-left: 7px;
+  color: #6d6c6c;
+}
+
+.movie_contents_info {
+  margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+button.show_btn {
+  display: flex;
+  align-items: center;
+  background-color: #BE123C;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 350px;
+  justify-content: center;
+  padding: 12px 0;
+  margin-bottom: 10px;
+}
+
+button.more_btn {
+  display: flex;
+  align-items: center;
+  background-color: #F8E7EB;
+  color: rgb(52, 52, 52);
+  border: 1px solid #BE123C;
+  border-radius: 10px;
+  font-size: 16px;
+  width: 285px;
+  width: 350px;
+  justify-content: center;
+  padding: 12px 0;
+  margin-bottom: 10px;
+}
+
+.show_btn p {
+  margin: 0;
+}
+
+.more_btn p {
+  margin: 0;
+}
+
+svg.ticket_icon {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.contents_btn {
+  margin-top: 20px;
+}
+
+.movie_contents {
+  margin-right: 40px;
+  font-family: DM Sans, sans-serif;;
+}
+
+.movie_contents p {
+  line-height: 1.4;
+  font-size: 17px;
+}
+
+span.p-text {
+  color: #be133c;
+  font-weight: 300;
+}
+
