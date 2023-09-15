@@ -1,11 +1,27 @@
+/* eslint-disable no-unused-vars */
+import React from 'react'
+import ReactPlayer from 'react-player/youtube'
+import { useQuery } from "@tanstack/react-query";
 import SideBar from "./SideBar";
+import { useParams } from 'react-router-dom';
 import Trailer_img from "../assets/trailer.png"
 import Movies_img from "../assets/movies.png"
+import { FetchMovie } from "../api/fetchMovies";
 import { AiFillStar } from 'react-icons/ai'
 import { IoTicketOutline } from 'react-icons/io5'
 import { BsListUl } from 'react-icons/bs'
 
 const DetailsLayout = () => {
+    const { movie } = useParams();
+       const {status, error, data:data } = useQuery({
+        queryKey: ["movie"],
+        queryFn: () => FetchMovie(movie),
+    })
+    
+    if(status === "loading") return <h2>Loading.....</h2>
+    if(status === "error") return <h2>{JSON.stringify(error)}</h2>
+    const videoId = data.videos.results[0].key;
+    const url = `https://www.youtube.com/watch?v=${videoId}`;
     return ( 
         <>
           <div>
@@ -13,13 +29,13 @@ const DetailsLayout = () => {
                 <SideBar />
                 <section className="details-content">
                    <div className="trailer">
-                    <img src={Trailer_img} alt="trailer movie" />
+                    <ReactPlayer width={1052} height={400} url={url} />
                    </div>
                    <div className="media_info">
                     <div className="movie_title">
-                        <span>Top Gun: Maverick </span> 
+                        <span>{data.title}</span> 
                         <span>• </span>
-                        <span>2022</span>
+                        <span>{data.release_date.slice(0,4)}</span>
                         <span> • </span>
                         <span>PG-13</span> 
                         <span>• </span>
@@ -36,10 +52,7 @@ const DetailsLayout = () => {
                    </div>
                    <div className="movie_contents_info">
                         <div className="movie_contents">
-                            <p>After thirty years, Maverick is still pushing the envelope as a top naval aviator,
-                                but must confront ghosts of his past when he leads TOP GUN&apos;s elite graduates
-                                on a mission that demands the ultimate sacrifice from those chosen to fly it.
-                            </p>
+                            <p>{data.overview}</p>
                             <div className="producers">
                                 <p>Director : <span className="p-text">Joseph Kosinski</span></p>
                                 <p>Writers : <span className="p-text">Jim Cash, Jack Epps Jr,  Peter Craig</span></p>
