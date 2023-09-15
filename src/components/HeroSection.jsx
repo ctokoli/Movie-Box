@@ -12,7 +12,6 @@ const MenuWithHero = () => {
     const [search, setSearch] = useState('');
     const searchFn = (e) => {
         setSearch(e.target.value)
-        console.log(e.target.value)
     }
     return (  
         <>
