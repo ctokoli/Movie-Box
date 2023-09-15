@@ -368,7 +368,7 @@ svg.ticket_icon {
 
 .movie_contents {
   margin-right: 40px;
-  font-family: DM Sans, sans-serif;;
+  font-family: DM Sans, sans-serif;
 }
 
 .movie_contents p {
@@ -381,3 +381,34 @@ span.p-text {
   font-weight: 300;
 }
 
+button.rated_btn {
+  border: none;
+  color: #fff;
+  background-color: #BE123B;
+  padding: 13px 27px;
+  border-radius: 10px;
+  font-family: DM Sans, sans-serif;
+  font-size: 16px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+select.select {
+  width: 388px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-left: -11px;
+  position: relative;
+  z-index: 0;
+}
+
+.producers {
+  margin-top: 40px;
+}
+
+.featured {
+  display: flex;
+  justify-content: space-between;
+}
