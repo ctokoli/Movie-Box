@@ -1,10 +1,11 @@
+/* eslint-disable no-unused-vars */
 import { useQuery } from "@tanstack/react-query";
 import FetchMovies from "../api/fetchMovies";
 import CardComponet from "./CardComponent";
 import { IoIosArrowForward } from 'react-icons/io'
+import { NavLink } from 'react-router-dom';
 
-const HomeContent = () => {
-    // eslint-disable-next-line no-unused-vars
+const HomeContent = (search) => {
     const {status, error, data:movies, } = useQuery({
         queryKey: ["movies"],
         queryFn: FetchMovies
@@ -17,14 +18,19 @@ const HomeContent = () => {
             <section className="container">
                 <div className="featured">
                     <h2>Featured Movies</h2>
-                    <h4>See more  <IoIosArrowForward /> </h4>
-                </div>
-             <CardComponet />
-                {/* {movies?.results?.map((movie) => (
-                    <div key={movie.id}>
-                    
+                    <div className="see_more">
+                        <h4>See more </h4>
+                        <IoIosArrowForward  className="arrow"/>
                     </div>
-                ))} */}
+                </div>
+             <div className="card-content">
+                {movies?.map((movie) => (
+                    <NavLink to={`/movie/${movie.id}`} key={movie.id}>
+                        <CardComponet movie={movie} />
+                    </NavLink>
+                    
+                ))}
+             </div>
             </section>
         </>
      );
