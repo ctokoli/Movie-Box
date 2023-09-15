@@ -1,5 +1,6 @@
 import SideBar from "./SideBar";
 import Trailer_img from "../assets/trailer.png"
+import Movies_img from "../assets/movies.png"
 import { AiFillStar } from 'react-icons/ai'
 import { IoTicketOutline } from 'react-icons/io5'
 import { BsListUl } from 'react-icons/bs'
@@ -34,26 +35,31 @@ const DetailsLayout = () => {
                     </div>
                    </div>
                    <div className="movie_contents_info">
-                    <div className="movie_contents">
-                     <p>After thirty years, Maverick is still pushing the envelope as a top naval aviator,
-                        but must confront ghosts of his past when he leads TOP GUN&apos;s elite graduates
-                         on a mission that demands the ultimate sacrifice from those chosen to fly it.
-                      </p>
-                      <div className="producers">
-                        <p>Director : <span className="p-text">Joseph Kosinski</span></p>
-                        <p>Writers : <span className="p-text">Jim Cash, Jack Epps Jr,  Peter Craig</span></p>
-                        <p>Stars : <span className="p-text">Tom Cruise, Jennifer Connelly, Miles Teller</span></p>
-                      </div>
-                    </div>
-                    <div className="contents_btn">
-                        <button className="show_btn">
-                        <IoTicketOutline className="ticket_icon" />
-                         <p>See Showtimes</p></button>
-                        <button className="more_btn">
-                        <BsListUl className="list_icon" />
-                         <p>More watch options</p>
-                        </button>
-                    </div>
+                        <div className="movie_contents">
+                            <p>After thirty years, Maverick is still pushing the envelope as a top naval aviator,
+                                but must confront ghosts of his past when he leads TOP GUN&apos;s elite graduates
+                                on a mission that demands the ultimate sacrifice from those chosen to fly it.
+                            </p>
+                            <div className="producers">
+                                <p>Director : <span className="p-text">Joseph Kosinski</span></p>
+                                <p>Writers : <span className="p-text">Jim Cash, Jack Epps Jr,  Peter Craig</span></p>
+                                <p>Stars : <span className="p-text">Tom Cruise, Jennifer Connelly, Miles Teller</span></p>
+                            </div>
+                             <button className="rated_btn">Top Rated movies #65</button>
+                             <select className="select">
+                                <option>Awards 9 nominations</option>
+                             </select>
+                        </div>
+                        <div className="contents_btn">
+                            <button className="show_btn">
+                            <IoTicketOutline className="ticket_icon" />
+                            <p>See Showtimes</p></button>
+                            <button className="more_btn">
+                            <BsListUl className="list_icon" />
+                            <p>More watch options</p>
+                            </button>
+                         <img src={Movies_img} alt="movies" />
+                        </div>
                    </div>
                 </section>
             </div>
