@@ -1,22 +1,35 @@
+import { useState } from "react"
 import logo from "../assets/tv_icon.png"
 import menu_icon from "../assets/Menu_icon.png"
 import imdb from "../assets/imdb.svg"
 import tomato from "../assets/rotten_tomato.svg"
 import play_icon from "../assets/Play_icon.png"
 import { BiSearch } from 'react-icons/bi'
+import { NavLink } from 'react-router-dom';
+import HomeContent from "./HomeContent"
 
 const MenuWithHero = () => {
+    const [search, setSearch] = useState('');
+    const searchFn = (e) => {
+        setSearch(e.target.value)
+        console.log(e.target.value)
+    }
     return (  
         <>
             <section className="hero-menu">
                 <div className="container">
                     <menu className="menu">
-                        <div className="logo">
-                            <img src={logo} alt="logo"></img>
-                            <h2>MovieBox</h2>
-                        </div>
+                        <NavLink to="/" className="hm_link">
+                            <div className="logo">
+                                <img src={logo} alt="logo"></img>
+                                <h2>MovieBox</h2>
+                            </div>
+                        </NavLink>
                         <div className="search">
-                            <input type="input" placeholder="What do you want to watch?"></input>
+                            <input type="input" 
+                                onChange={(e) => searchFn(e)}
+                                placeholder="What do you want to watch?"
+                             />
                             <BiSearch className="search_icon" />
                         </div>
                         <div className="sign-in">
@@ -59,6 +72,7 @@ const MenuWithHero = () => {
                     </div>
                 </div>
             </section>
+            <HomeContent search={search} />
         </>
     );
 }
