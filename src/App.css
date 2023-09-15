@@ -59,6 +59,14 @@ menu.menu {
   display: flex;
   justify-content: space-between;
   width: 220px;
+  font-family: DM Sans, serif;
+}
+
+.rating_home {
+  display: flex;
+  justify-content: space-between;
+  width: 251px;
+  font-family: DM Sans, serif;
 }
 
 .imdb {
@@ -411,4 +419,65 @@ select.select {
 .featured {
   display: flex;
   justify-content: space-between;
+}
+
+.see_more {
+  display: flex;
+  align-items: center;
+  color: #be133c;
+  font-family: DM Sans, sans-serif;
+  cursor: pointer;
+}
+
+.see_more h4{
+  font-weight: 300;
+}
+
+.arrow{
+  padding-left: 10px;
+}
+
+.featured h2{
+  font-family: DM Sans, sans-serif;
+}
+
+.card_component {
+  margin-bottom: 90px;
+  margin-top: 20px;
+}
+
+.card-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.date span:first-child {
+  padding-left: 0;
+}
+
+.date span, .genre span{
+  color: #666666;
+  font-weight: 500;
+}
+
+.genre span:first-child {
+  padding-left: 0;
+}
+
+h3.title {
+  font-family: DM Sans, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+img.poster_img {
+  width: 250px;
+}
+
+a{
+  color: #333333;
+}
+
+a.hm_link {
+  padding: 0px;
 }
