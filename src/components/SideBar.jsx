@@ -11,10 +11,12 @@ const SideBar = () => {
         <>
           <section className="nav-section">
                     <div className="menu">
-                        <div className="logo">
-                            <img src={logo} alt="logo" className="logo-icon" />
-                            <h2 className="menu-name">MovieBox</h2>
-                        </div>
+                        <NavLink to="/" className="hm_link">
+                            <div className="logo">
+                                <img src={logo} alt="logo" className="logo-icon" />
+                                <h2 className="menu-name">MovieBox</h2>
+                            </div>
+                        </NavLink>
                         <ul className="menu-list">
                             <NavLink to="/" className="nav_link">
                                 <GoHome className="home_icon" />
