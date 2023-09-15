@@ -24,7 +24,10 @@ const HomeContent = (search) => {
                     </div>
                 </div>
              <div className="card-content">
-                {movies?.map((movie) => (
+                {movies.filter((movie) => {
+                    return search.search.toLowerCase() === '' ? movie 
+                    : movie.title.toLowerCase().includes(search.search)
+                }).map((movie) => (
                     <NavLink to={`/movie/${movie.id}`} key={movie.id}>
                         <CardComponet movie={movie} />
                     </NavLink>
