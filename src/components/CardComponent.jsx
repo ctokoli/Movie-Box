@@ -10,12 +10,12 @@ const CardComponet = ({movie}) => {
     return ( 
         
         <>
-            <div className='card_component'>
-                <img src={Movie_poster} alt="Movie_poster"  className="poster_img"/>
+            <div className='card_component'  data-testid="movie-card">
+                <img src={Movie_poster} alt="Movie_poster" data-testid="movie-poster"  className="poster_img"/>
                 <div className='date'>
-                <span>USA,</span><span>{movie.release_date.slice(0, 4)}</span>
+                <span>USA,</span><span data-testid="movie-release-date">{movie.release_date.slice(0, 4)}</span>
                 </div>
-                <h3 className='title'>{movie.title}</h3>
+                <h3 className='title' data-testid="movie-title">{movie.title}</h3>
                 <div className="rating_home">
                     <div className="imdb">
                         <img src={imdb} alt="imdb"></img>
