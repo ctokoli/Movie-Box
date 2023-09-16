@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css'
 import DetailsPage from './components/DetailsPage'
-import HomePage from './components/homepage';
+import HomePage from './components/Homepage';
 
 
 function Index() {
