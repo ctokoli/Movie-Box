@@ -77,6 +77,17 @@ Install this project with:
 
 Install Vite [https://vitejs.dev/]
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Here is the link to the live experience](https://moviebox-a18k.onrender.com/).
+
+> |     | Mobile version                      | Desktop version                      |     |
+> | --- | ----------------------------------- | ------------------------------------ | --- |
+> |     | ![Screenshot1](./src/assets/mobile.png) | ![Screenshot2](./src/assets/desktop.png) |
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 👥 Author <a name="authors"></a>
 
 👤 **Cephas, Tokoli**
