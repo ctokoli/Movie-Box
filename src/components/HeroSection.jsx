@@ -19,7 +19,7 @@ const MenuWithHero = () => {
                 <div className="container">
                     <menu className="menu">
                         <NavLink to="/" className="hm_link">
-                            <div className="logo">
+                            <div className="logo_home">
                                 <img src={logo} alt="logo"></img>
                                 <h2>MovieBox</h2>
                             </div>
