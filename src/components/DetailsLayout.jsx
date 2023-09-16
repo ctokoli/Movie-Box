@@ -33,13 +33,13 @@ const DetailsLayout = () => {
                    </div>
                    <div className="media_info">
                     <div className="movie_title">
-                        <span>{data.title}</span> 
+                        <span data-testid="movie-title">{data.title}</span> 
                         <span>• </span>
-                        <span>{data.release_date.slice(0,4)}</span>
+                        <span data-testid="movie-release-date">{data.release_date.slice(0,4)}</span>
                         <span className='dot'> • </span>
                         <span className='pg'>PG-13</span> 
                         <span>• </span>
-                        <span>2h 10m</span>
+                        <span data-testid="movie-runtime">{data.runtime}m</span>
                         <button className="btn-genre">Action</button>
                         <button className="btn-genre">Drama</button>
                     </div>
@@ -52,7 +52,7 @@ const DetailsLayout = () => {
                    </div>
                    <div className="movie_contents_info">
                         <div className="movie_contents">
-                            <p>{data.overview}</p>
+                            <p data-testid="movie-overview">{data.overview}</p>
                             <div className="producers">
                                 <p>Director : <span className="p-text">Joseph Kosinski</span></p>
                                 <p>Writers : <span className="p-text">Jim Cash, Jack Epps Jr,  Peter Craig</span></p>
