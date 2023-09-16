@@ -29,15 +29,15 @@ const DetailsLayout = () => {
                 <SideBar />
                 <section className="details-content">
                    <div className="trailer">
-                    <ReactPlayer width={1052} height={400} url={url} />
+                    <ReactPlayer width={1052} height={400} url={url} className="trailer_movie" />
                    </div>
                    <div className="media_info">
                     <div className="movie_title">
                         <span>{data.title}</span> 
                         <span>• </span>
                         <span>{data.release_date.slice(0,4)}</span>
-                        <span> • </span>
-                        <span>PG-13</span> 
+                        <span className='dot'> • </span>
+                        <span className='pg'>PG-13</span> 
                         <span>• </span>
                         <span>2h 10m</span>
                         <button className="btn-genre">Action</button>
