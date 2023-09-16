@@ -17,12 +17,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [School Library App] <a name="about-project"></a>
+# 📖 [MovieBox] <a name="about-project"></a>
 
-**[School Library App]**  As a librarian at OOP University, I was tasked with developing a tool to manage the library's book inventory and keep track of borrowers. The project involves designing an application that will enable uses to:
-- Register new students and teachers into the system.
-- Catalog new books as they are added to the library.
-- Maintain a comprehensive record of individuals who have borrowed specific books and the corresponding borrowing dates.
+**[MovieBox]**  is a React Single Page Application that shows top 10 rated movies from The Movie DB (TMDB)  API. 
 
 
 
@@ -31,25 +28,26 @@
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Server</summary>
+  <summary>Tools</summary>
   <ul>
-    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+    <li><a href="https://react.dev/">React</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://reactrouter.com/">React Router</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://tanstack.com/query/v3/">React Query</a></li>
   </ul>
 </details>
 
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
+
 
 ### Key Features <a name="key-features"></a>
 
-- **[Create student]**
-- **[Create Teacher]**
-- **[Create books]**
-- **[Keep records of borrowed items]**
+- **[Show Top 10 Rated Movies]**
+- **[Show Movie Details]**
+- **[Search for Movies]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -57,8 +55,8 @@
 
 ### Prerequisites
 
-In order to run this project you need:
--postgres installed
+In order to run this project you need to:
+-installed React
 -Laptop
 -Internet
 -Github
@@ -70,16 +68,16 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/ctokoli/OOP-school-library.git
+  https://github.com/ctokoli/Movie-Box.git
 ```
 
 ### Install
 
 Install this project with:
 
-Install Ruby [https://www.ruby-lang.org/en/documentation/installation/]
+Install Vite [https://vitejs.dev/]
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 👤 **Cephas, Tokoli**
 
@@ -114,11 +112,11 @@ If you like this project give a star
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We would like to thank Microverse community.
-
+I would like to thank HGNx community and Mentors. 
+I would also like to thank Adriana Eka Prayudha for the UI Design.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 ## 📝 License <a name="license"></a>
 
