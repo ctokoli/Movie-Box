@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import '../App'
+import '../App.css'
 import DetailsPage from './DetailsPage'
 import HomePage from './homepage';
 
